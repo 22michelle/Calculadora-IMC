@@ -1,0 +1,43 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="./style/style.css">
+  </head>
+  
+  <body>
+    
+    
+    <div class="row">
+    <div class='square'>
+      
+      </br>
+      <form onsubmit="calculaImc(event)"></br>
+      <h1 class='offTela'>Calculadora IMC</h1>
+      <label for="imcPeso" class='imcTitulo offTela'>Peso</label></br>
+      <input type="number" name='imcPeso' class='calculadoraImc offTela' placeholder='62,5' step='0.01' id='imcPeso'> </br>
+      <label for="imcAltura" class='imcTitulo offTela'>Altura</label></br>
+      <input type="number" name='imcAltura' class='calculadoraImc offTela' placeholder='1,73' step='0.01' id='imcAltura'> </br>
+      <label for="imcIdade" class='imcTitulo offTela'>Edad</label></br>
+      <input type="number" name='imcIdade' class='calculadoraImc offTela' placeholder='35' id='imcIdade'></br>
+
+      <label for="imcSexo" class='imcTitulo offTela'>Atividad Física</label></br>  
+
+      <select name="atividadeFisica" class='atividadeFisica' id='imcNivelFisico'>
+        <option value="sedentario" class='atividadeFisica'>Sedentario</option>
+        <option value="moderado" class='atividadeFisica'>Moderado</option>
+        <option value="intenso" class='atividadeFisica'>Intenso</option>
+      </select>
+      </br><input type="submit" class='botaoCalcula' value='Calcular' id='calcular'>
+      </form>
+      
+      <div class='mensagemFinal' id='mensagemFinal'>
+        
+      </div>
+    </div>
+   
+    <div class='enfeite' >
+    </div>
+  </div>
+    <script src="./script/app.js"></script>
+  </body>
+
+</html>
